@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppLogin.LoginPage"
+             Title="LoginPage">
+    <StackLayout Margin="50" HorizontalOptions="Fill">
+        <StackLayout Padding="10">
+
+            <Image Source="login.png" WidthRequest="200" HeightRequest="200"></Image>
+
+            <Label Text="User Name:"></Label>
+
+            <Entry x:Name="txtUserName" 
+                   Placeholder="Nhap vao UserName"
+                   TextColor="#000"
+                   PlaceholderColor="#154360">
+            </Entry>
+
+            <Label Text="Pass Word:"></Label>
+            
+            <Entry x:Name="txtPassWord"
+                   Placeholder="Nhap vao PassWord"
+                   TextColor="#000"
+                   PlaceholderColor="#154360">
+            </Entry>
+
+
+            <Button x:Name="btnLogin"
+                    Text="Login"
+                    Clicked="Login_Clicked"
+                    BackgroundColor="Transparent"
+                    TextColor="#154360"
+                    CornerRadius="50"
+                    BorderWidth="1.5"
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    VerticalOptions="Center"
+                    ></Button>
+
+        </StackLayout>
+    </StackLayout>
+</ContentPage>  
